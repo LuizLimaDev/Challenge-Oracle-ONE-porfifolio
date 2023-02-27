@@ -5,11 +5,38 @@
     text-align: center;
     border-top: 2px solid var(--cor-primario-ligth);
     padding: 2rem 0 1rem;
+
+    animation: surgimentoTitulo 3s;
+}
+
+@keyframes surgimentoTitulo {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 .contato__titulo--img {
     width: 2rem;
     vertical-align: sub;
+}
+
+.container__formulario {
+    animation: surgimentoContato 3s;
+
+}
+
+@keyframes surgimentoContato {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 .formulario__container--input {

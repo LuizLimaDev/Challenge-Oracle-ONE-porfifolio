@@ -80,6 +80,21 @@
     align-items: center;
 }
 
+.titulo__descricao,
+.titulo__network {
+    animation: surgimento 3s;
+}
+
+@keyframes surgimento {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
 .titulo__network--links {
     font-weight: 500;
     margin: 0 .5rem;
@@ -121,11 +136,11 @@
     }
 
     .titulo__descricao {
-        margin: .5rem;
+        margin: 1.5rem;
     }
 
     .titulo__network {
-        margin-top: .5rem;
+        margin-top: 1rem;
     }
 }
 

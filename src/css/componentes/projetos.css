@@ -6,6 +6,18 @@
     align-items: center;
     margin: 2rem 0;
     position: relative;
+
+    animation: surgimentoProjetos 3s;
+}
+
+@keyframes surgimentoProjetos {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 .projetos__titulo {

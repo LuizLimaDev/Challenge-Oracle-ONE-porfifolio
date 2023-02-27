@@ -16,11 +16,36 @@
     width: 2rem;
 }
 
+.formacoes__titulo,
+.formacoes__titulo-img {
+    animation: surgimentoFormacoes 2s;
+    transform: translateY(40px);
+    opacity: 100%;
+    animation-fill-mode: forwards;
+}
+
 .container__box {
     background-color: var(--cor-de-fundo-ligth);
     margin: 1rem;
     padding: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    animation: surgimentoFormacoes 2s;
+    transform: translateY(40px) scale(1);
+    animation-fill-mode: forwards;
+    opacity: 100%;
+}
+
+@keyframes surgimentoFormacoes {
+    from {
+        transform: translateY(40px) scale(0);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px) scale(1);
+        opacity: 100%;
+    }
 }
 
 .box__img {

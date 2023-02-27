@@ -12,6 +12,22 @@
     margin-bottom: .5rem;
 }
 
+.hobbies__titulo,
+.hobbies__titulo--img,
+.hobbies__lista--itemTag {
+    animation: surgimentoHobbiesTitulo 3s;
+}
+
+@keyframes surgimentoHobbiesTitulo {
+    from {
+        opacity: 0%
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
 .container__hobbies {
     display: flex;
     padding: 1rem;
@@ -39,6 +55,30 @@
 
 .hobbies__lista--itemTag {
     font-weight: 500;
+}
+
+.hobbies__lista--img {
+    animation: surgimentoHobbies .5s;
+    animation-iteration-count: 2;
+    transform: scale(1);
+}
+
+@keyframes surgimentoHobbies {
+    50% {
+        transform: scale(.5);
+    }
+
+    125% {
+        transform: scale(1.25);
+    }
+
+    75% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media (min-width: 768px) {

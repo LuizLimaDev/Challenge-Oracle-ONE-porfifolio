@@ -16,6 +16,26 @@
 .skills_titulo--img {
     width: 2rem;
     vertical-align: sub;
+
+    animation: surgimentoImg 2.5s;
+    transform: rotateZ(0);
+    position: relative;
+    right: 70%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes surgimentoImg {
+    from {
+        transform: rotateZ(0);
+        opacity: 0%;
+        right: 70%;
+    }
+
+    to {
+        transform: rotateZ(1080deg);
+        opacity: 100%;
+        right: 0%;
+    }
 }
 
 .skills__lista {
@@ -34,6 +54,22 @@
     width: 7rem;
     height: 7rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    animation: surgimentoSkill 2s steps(40, end);
+    transform: rotateZ(720deg) scale(0);
+    animation-fill-mode: forwards;
+}
+
+@keyframes surgimentoSkill {
+    from {
+        transform: rotateZ(0deg) scale(0.5);
+        opacity: 0%;
+    }
+
+    to {
+        transform: rotateZ(720deg) scale(1);
+        opacity: 100%;
+    }
 }
 
 .skills__lista--item {

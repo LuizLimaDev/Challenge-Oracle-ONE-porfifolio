@@ -6,9 +6,26 @@
 }
 
 .sobre__titulo {
-    margin-top: 1rem;
+    padding-top: 3rem;
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
+
+    animation: surgimentoTitulo 2s;
+    transform: translateY(-40px);
+    animation-fill-mode: forwards;
+    animation-timeline: scroll(vertical);
+}
+
+@keyframes surgimentoTitulo {
+    from {
+        transform: translateY(-40px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
 
 .sobre__titulo--img {
@@ -23,16 +40,74 @@
     text-indent: 1rem;
 }
 
+.sobre__texto--p1 {
+    animation: entradaP1 2s;
+    transform: translateX(-50px);
+    animation-fill-mode: forwards;
+    animation-timeline: scroll(vertical);
+}
+
+@keyframes entradaP1 {
+    from {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+.sobre__texto--p2 {
+    animation: entradaP2 2s;
+    transform: translateX(50px);
+    animation-fill-mode: forwards;
+}
+
+@keyframes entradaP2 {
+    from {
+        opacity: 0%;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
 .sobre__assinatura {
     font-family: var(--fonte-assinatura);
     align-self: end;
     margin: 1.5rem 1rem;
     font-size: 2rem;
+
+    animation: surgimentoAssinatura 2s;
+    transform: translateY(40px);
+    animation-fill-mode: forwards;
 }
+
+@keyframes surgimentoAssinatura {
+    from {
+        transform: translateY(40px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
 
 @media (min-width: 768px) {
     .sobre__titulo {
-        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .sobre__texto--p1 {
+        margin-top: 0;
     }
 
     .sobre__assinatura {
