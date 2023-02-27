@@ -1,0 +1,10 @@
+@import url("../variaveis.css");
+
+.container__rodape {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid var(--cor-primario-ligth);
+    padding-top: 1.5rem;
+}

@@ -1,0 +1,64 @@
+@import url("variaveis.css");
+
+.container__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.container__info {
+    display: flex;
+    align-items: center;
+}
+
+.menu__lista {
+    display: none;
+}
+
+.navbar__logo {
+    width: 2em;
+    height: 2em;
+    margin-bottom: .5rem;
+}
+
+.navbar__nome {
+    margin-left: .2rem;
+    font-family: var(--fonte-secundaria);
+    font-size: .7rem;
+}
+
+a {
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container__navbar {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 10rem;
+    }
+
+    .container__info {
+        flex-grow: 1;
+    }
+
+    .menu__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 5rem 1rem 1rem;
+        width: 30rem;
+    }
+
+    .navbar__contato {
+        font-weight: 500;
+    }
+
+}

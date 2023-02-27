@@ -1,0 +1,57 @@
+@import url("../variaveis.css");
+
+.container__formacoes {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-de-fundo-dark);
+    padding: 1.5rem 0 1.5rem;
+}
+
+.formacoes__titulo {
+    margin: 1.5rem 0 2rem;
+}
+
+.formacoes__titulo-img {
+    width: 2rem;
+}
+
+.container__box {
+    background-color: var(--cor-de-fundo-ligth);
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.box__img {
+    width: 6.5rem;
+    height: 5rem;
+}
+
+.box__titulo {
+    font-family: var(--fonte-primaria);
+    margin-top: 0.5rem;
+}
+
+.box__descricao {
+    font-family: var(--fonte-primaria);
+}
+
+@media (min-width: 768px) {
+    .container__formacoes--boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container__box {
+        width: 20rem;
+        height: 11rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container__formacoes {
+        padding: 2rem 12rem;
+    }
+}

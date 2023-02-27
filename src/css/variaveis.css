@@ -1,0 +1,14 @@
+:root {
+    --fonte-primaria: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Press Start 2P', cursive;
+    --fonte-assinatura: 'Great Vibes', cursive;
+    --cor-de-fundo-ligth: #FEF4D3;
+    --cor-primario-ligth: #EDC988;
+    --cor-terciaria-light: #E54861;
+    --cor-quartenaria-light: #132743;
+    --cor-de-fundo-dark: #EFD5B7;
+    --cor-primario-dark: #F2A379;
+    --cor-terciaria-dark: #D7385E;
+    --cor-quartenaria-dark: #26252C;
+    --cor-botao-sucess: #20A612;
+}

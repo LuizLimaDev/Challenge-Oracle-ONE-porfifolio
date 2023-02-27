@@ -1,0 +1,47 @@
+.container__sobre {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-dark);
+    padding: 1.5rem;
+}
+
+.sobre__titulo {
+    margin-top: 1rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+}
+
+.sobre__titulo--img {
+    width: 2rem;
+    vertical-align: sub;
+}
+
+.sobre__texto--p1,
+.sobre__texto--p2 {
+    margin: 1.5rem 0 0 .5rem;
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+.sobre__assinatura {
+    font-family: var(--fonte-assinatura);
+    align-self: end;
+    margin: 1.5rem 1rem;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .sobre__titulo {
+        margin-bottom: 1.5rem;
+    }
+
+    .sobre__assinatura {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container__sobre {
+        padding: 2rem 12rem;
+    }
+}

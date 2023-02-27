@@ -1,0 +1,127 @@
+@import url("../variaveis.css");
+
+.contato__titulo {
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    border-top: 2px solid var(--cor-primario-ligth);
+    padding: 2rem 0 1rem;
+}
+
+.contato__titulo--img {
+    width: 2rem;
+    vertical-align: sub;
+}
+
+.formulario__container--input {
+    position: relative;
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.formulario__input {
+    background-color: var(--cor-primario-ligth);
+    border-bottom: 1px solid var(--cor-terciaria-dark);
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 3.25rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.formulario__input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.formulario__input:focus {
+    outline: none;
+}
+
+.formulario__input--label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: small;
+    font-weight: 500;
+    transition: all .25s;
+}
+
+.formulario__input:not(:placeholder-shown)+.formulario__input--label,
+.formulario__input:focus+.formulario__input--label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all .25s;
+}
+
+.formulario__input--msgErro {
+    color: var(--cor-terciaria-dark);
+    font-weight: 500;
+}
+
+.erroEmail {
+    display: none;
+}
+
+.formulario__campoTexto {
+    background-color: var(--cor-primario-ligth);
+    border-bottom: 1px solid var(--cor-terciaria-dark);
+    padding: 1rem 0 0 .5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.formulario__campoTexto:focus {
+    outline: none;
+}
+
+.formulario__btnEnviar {
+    background-color: var(--cor-terciaria-dark);
+    width: 10rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    margin: 2rem 0;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.formulario__btnEnviar:hover {
+    background-color: var(--cor-primario-ligth);
+}
+
+.container__ilustracao {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 0 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .contato__titulo {
+        padding-top: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contato__titulo {
+        padding-top: 4rem;
+    }
+
+    .container__formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__input,
+    .formulario__campoTexto {
+        width: 70vw;
+    }
+
+    .formulario__ilustracao {
+        width: 20vw;
+        align-self: center;
+        margin-right: 10%;
+    }
+}

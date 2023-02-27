@@ -1,0 +1,20 @@
+@import url("variaveis.css");
+@import url("componentes/header.css");
+@import url("componentes/titulo.css");
+@import url("componentes/sobre.css");
+@import url("componentes/skills.css");
+@import url("componentes/hobbies.css");
+@import url("componentes/formacoes.css");
+@import url("componentes/projetos.css");
+@import url("componentes/contato.css");
+@import url("componentes/rodape.css");
+
+body {
+    background-color: var(--cor-de-fundo-ligth);
+    font-family: var(--fonte-primaria);
+    font-weight: 300;
+}
+
+.container__invalido {
+    border: 2px solid var(--cor-terciaria-dark);
+}
