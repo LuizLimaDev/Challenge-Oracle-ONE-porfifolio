@@ -4,7 +4,7 @@
     font-family: var(--fonte-secundaria);
     text-align: center;
     border-top: 2px solid var(--cor-primario-ligth);
-    padding: 2rem 0 1rem;
+    padding: 2rem 0 0 0;
 
     animation: surgimentoTitulo 3s;
 }
@@ -20,23 +20,31 @@
 }
 
 .contato__titulo--img {
-    width: 2rem;
-    vertical-align: sub;
+    width: 5rem;
+    vertical-align: middle;
+    padding-bottom: .7rem;
 }
 
-.container__formulario {
-    animation: surgimentoContato 3s;
+.contato__pergaminho {
+    position: absolute;
+    width: 100vw;
+    height: 88vh;
 
+    animation: surgimentoPergaminho 2s;
 }
 
-@keyframes surgimentoContato {
+@keyframes surgimentoPergaminho {
     from {
-        transform: rotateY(0deg);
+        height: 20vh
     }
 
     to {
-        transform: rotateY(360deg);
+        height: 88vh
     }
+}
+
+.container__formulario {
+    height: 90vh;
 }
 
 .formulario__container--input {
@@ -45,6 +53,25 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    top: 15vh;
+    left: 15%;
+    width: 60vw;
+
+    animation: surgimentoFormulario 2s 1s;
+    opacity: 0%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes surgimentoFormulario {
+    from {
+        opacity: 0%;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }
 
 .formulario__input {
@@ -117,16 +144,27 @@
     background-color: var(--cor-primario-ligth);
 }
 
-.container__ilustracao {
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    margin: 0 0 2rem 1rem;
-}
-
 @media (min-width: 768px) {
     .contato__titulo {
         padding-top: 3rem;
+    }
+
+    .contato__pergaminho {
+        height: 68vh;
+    }
+
+    @keyframes surgimentoPergaminho {
+        from {
+            height: 20vh
+        }
+
+        to {
+            height: 68vh
+        }
+    }
+
+    .container__formulario {
+        height: 70vh;
     }
 }
 
@@ -135,20 +173,41 @@
         padding-top: 4rem;
     }
 
+    .contato__pergaminho {
+        height: 78vh;
+        width: 50vw;
+        left: 25%;
+    }
+
+    @keyframes surgimentoPergaminho {
+        from {
+            height: 20vh
+        }
+
+        to {
+            height: 78vh
+        }
+    }
+
     .container__formulario {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 85vh;
+    }
+
+    .formulario__container--input {
+        left: 20%
     }
 
     .formulario__input,
     .formulario__campoTexto {
-        width: 70vw;
+        width: 35vw;
     }
 
-    .formulario__ilustracao {
-        width: 20vw;
-        align-self: center;
-        margin-right: 10%;
+    .formulario__btnEnviar {
+        align-self: flex-start;
+        position: relative;
+        left: 20%;
     }
 }

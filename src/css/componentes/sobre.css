@@ -13,7 +13,6 @@
     animation: surgimentoTitulo 2s;
     transform: translateY(-40px);
     animation-fill-mode: forwards;
-    animation-timeline: scroll(vertical);
 }
 
 @keyframes surgimentoTitulo {
@@ -44,7 +43,6 @@
     animation: entradaP1 2s;
     transform: translateX(-50px);
     animation-fill-mode: forwards;
-    animation-timeline: scroll(vertical);
 }
 
 @keyframes entradaP1 {

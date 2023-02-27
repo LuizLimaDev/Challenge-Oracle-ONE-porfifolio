@@ -55,7 +55,7 @@
     height: 7rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
-    animation: surgimentoSkill 2s steps(40, end);
+    animation: surgimentoSkill 1s steps(40, end);
     transform: rotateZ(720deg) scale(0);
     animation-fill-mode: forwards;
 }

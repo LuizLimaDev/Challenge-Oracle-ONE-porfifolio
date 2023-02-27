@@ -7,15 +7,19 @@
     margin: 2rem 0;
     position: relative;
 
-    animation: surgimentoProjetos 3s;
+    animation: surgimentoProjetos 1s;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
 @keyframes surgimentoProjetos {
     from {
+        transform: scale(3);
         opacity: 0%;
     }
 
     to {
+        transform: scale(1);
         opacity: 100%;
     }
 }
