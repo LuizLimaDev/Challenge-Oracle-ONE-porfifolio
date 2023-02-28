@@ -19,22 +19,20 @@
 - Limite de 300 caracteres para o campo "Menssagem".<br>
 <br><br>
 <b>Extra</b><br>
-Animaç
+Animações CSS.
 
 <br>
 
-<h2 align="center"> :iphone: Responsividade </h2>
-<p> Celular <p>
+<h2 align="center"> 💻 Tecnologias </h2>
 
-![Mobile]()
-
-<br>
-
-<p> Tablet <p>
-
-![tablet]()
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width=115>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" width=115>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width=115>
+<div>
 
 <br>
+
 
 <h3 align="center"> Se você curtiu o projeto, não deixe de marcar uma :star:
 
