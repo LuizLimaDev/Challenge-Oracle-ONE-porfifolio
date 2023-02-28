@@ -2,7 +2,7 @@
 const checaID = document.querySelectorAll(".animacaoPausada");
 
 function animacaoScroll() {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3.3);
     checaID.forEach((elemento) => {
         if ((windowTop) > elemento.offsetTop) {
             elemento.style = "animation-play-state: running";
