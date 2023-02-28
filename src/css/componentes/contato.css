@@ -30,7 +30,7 @@
     width: 100vw;
     height: 88vh;
 
-    animation: surgimentoPergaminho 1.5s;
+    animation: surgimentoPergaminho 1s;
 }
 
 @keyframes surgimentoPergaminho {
@@ -57,7 +57,7 @@
     left: 15%;
     width: 60vw;
 
-    animation: surgimentoFormulario 2s .5s;
+    animation: surgimentoFormulario 1.5s .5s;
     opacity: 0%;
     animation-fill-mode: forwards;
 }

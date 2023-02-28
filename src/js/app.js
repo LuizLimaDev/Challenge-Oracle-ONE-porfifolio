@@ -7,15 +7,12 @@ const formulario = document.querySelector("[data-formulario]");
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const listaRespostas = {
-        "nome": e.target.elements["nome"].value,
-        "email": e.target.elements["email"].value,
-        "assunto": e.target.elements["assunto"].value,
-    }
+    const respostaFormulario = `Olá meu nome é ${e.target.elements["nome"].value} e meu email ${e.target.elements["email"].value}.
+ Gostaria de comentar sobre o assunto ${e.target.elements["assunto"].value} e minha mensagem é:
+ ${e.target.elements["mensagem"].value}
+    `;
 
-    localStorage.setItem("mensagem", JSON.stringify(listaRespostas));
-
-    window.location.href = `https://api.whatsapp.com/send?phone=5514988116402&text=${listaRespostas}`;
+    window.location.href = `https://api.whatsapp.com/send?phone=5514988116402&text=${respostaFormulario}`;
 });
 
 //verificacoes dos campos

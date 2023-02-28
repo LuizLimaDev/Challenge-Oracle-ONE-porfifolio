@@ -30,7 +30,7 @@
 
 .container__hobbies {
     display: flex;
-    padding: 1rem;
+    justify-content: center;
     margin-bottom: 2.5rem;
 }
 
