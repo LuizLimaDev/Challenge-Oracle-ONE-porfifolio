@@ -1,6 +1,22 @@
 import verificaCampo from "./validacaoFormulario.js";
 
 const camposFormulario = document.querySelectorAll("[required]");
+const formulario = document.querySelector("[data-formulario]");
+
+//envio dos dados do formulario
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const listaRespostas = {
+        "nome": e.target.elements["nome"].value,
+        "email": e.target.elements["email"].value,
+        "assunto": e.target.elements["assunto"].value,
+    }
+
+    localStorage.setItem("mensagem", JSON.stringify(listaRespostas));
+
+    window.location.href = `https://api.whatsapp.com/send?phone=5514988116402&text=${listaRespostas}`;
+});
 
 //verificacoes dos campos
 camposFormulario.forEach((campo) => {
