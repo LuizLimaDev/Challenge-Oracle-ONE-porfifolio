@@ -33,6 +33,10 @@ function play() {
             });
         }
     }
+
+    coracao.addEventListener("animationend", function () {
+        window.location.href = "../../index.html";
+    });
 }
 
 play();
