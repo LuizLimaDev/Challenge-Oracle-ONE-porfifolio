@@ -21,27 +21,14 @@ h2 {
 }
 
 .text {
-    /* border-right: 2.5px solid white;
-    animation: cursor .5s infinite; */
     animation: escrevendo 2s steps(120, end);
     white-space: nowrap;
     overflow: hidden;
-    display: none;
 }
 
-.active {
-    display: block;
+.pause {
+    animation-play-state: paused;
 }
-
-/* @keyframes cursor {
-    0% {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: white;
-    }
-} */
 
 @keyframes escrevendo {
     from {
@@ -53,54 +40,71 @@ h2 {
     }
 }
 
-.story__tippingEffect {
-    display: inline-block;
-}
-
 .container__story {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 5rem;
 }
 
-.ln01,
-.ln02,
-.ln03,
-.ln04 {
-    margin-bottom: 2rem;
+.story__img {
+    width: 50vw;
 }
 
-.frameworks {
+.story__tippingEffect {
+    display: inline-block;
+    width: 50vw;
+    margin: .5rem 0 0 8rem;
+}
+
+.capitulo__tres {
+    margin-bottom: 4rem;
+}
+
+.container__mensagemFinal {
     display: flex;
-    justify-content: center;
-    position: relative;
-    width: 8rem;
-    height: 8rem;
-    margin: 2rem 0rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.heart {
-    width: 30%;
-    height: 30%;
-    background-size: contain;
-    background-image: url("../img/heart.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-
-    animation-name: flip;
-    animation-duration: 15s;
-    animation-delay: 10s;
+.mensagemFinal__texto {
+    display: none;
+    animation: surgimentoTexto 3s 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
 }
 
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
+@keyframes surgimentoTexto {
+    from {
+        opacity: 0%;
     }
 
-    100% {
-        transform: rotateY(1800deg)
+    to {
+        opacity: 100%;
+    }
+
+}
+
+.mensagemFinal__coracao {
+    display: none;
+    width: 5rem;
+    margin-top: 1.5rem;
+    opacity: 0%;
+
+
+    animation: coracao 5s 2s;
+    transform: rotateY(0deg);
+}
+
+@keyframes coracao {
+    from {
+        transform: rotateY(0deg);
+        opacity: 0%;
+    }
+
+    to {
+        transform: rotateY(1800deg);
+        opacity: 100%;
     }
 }

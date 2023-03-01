@@ -1,67 +1,38 @@
-const linhas = [document.querySelector(`.ln1`),
-document.querySelector(`.ln2`),
-document.querySelector(`.ln3`),
-document.querySelector(`.ln4`),
-document.querySelector(`.ln5`),
-document.querySelector(`.ln6`),
-document.querySelector(`.ln7`),
-document.querySelector(`.ln8`),
-document.querySelector(`.ln9`),
-document.querySelector(`.ln10`),
-document.querySelector(`.ln11`),
-document.querySelector(`.ln12`)];
+const elementos = document.querySelectorAll(".text");
+const imagem = document.querySelector(".story__img");
+const cap1 = document.querySelector(".capitulo__um");
+const cap2 = document.querySelector(".capitulo__dois");
+const mensagemFinal = document.querySelector(".container__mensagemFinal");
+const textoFinal = document.querySelector(".mensagemFinal__texto");
+const coracao = document.querySelector(".mensagemFinal__coracao");
 
-// capitulos
-const capitulo1 = [linhas[0], linhas[1], linhas[2], linhas[3]];
-const capitulo2 = [linhas[4], linhas[5], linhas[6], linhas[7]];
-const capitulo3 = [linhas[8], linhas[9], linhas[10], linhas[11]];
-const final = document.querySelector('.text__final');
-const coracao = document.querySelector('.frameworks');
+function play() {
+    for (let i = 0; i < elementos.length; i++) {
 
-// passa capitulo
+        elementos[i].addEventListener("animationend", function () {
+            elementos[i + 1].classList.remove("pause");
+        })
 
-// capitulo 1
-for (let i = 0; i < capitulo1.length; i++) {
-    capitulo1[i].addEventListener('animationend', () => {
-        capitulo1[i + 1].classList.add('active');
-    })
+        if (elementos[i] === elementos[3]) {
+            elementos[3].addEventListener("animationend", () => {
+                imagem.src = "../img/historia/capitulo2.png"
+            });
+        }
 
-    if (capitulo1[i] === linhas[2]) {
-        break
+        if (elementos[i] === elementos[10]) {
+            elementos[10].addEventListener("animationend", () => {
+                imagem.src = "../img/historia/capitulo3.png"
+            });
+
+        }
+
+        if (elementos[i] === elementos[10]) {
+            elementos[10].addEventListener("animationend", () => {
+                textoFinal.style.display = "flex";
+                coracao.style.display = "flex";
+            });
+        }
     }
 }
 
-linhas[3].addEventListener('animationend', () => {
-    setTimeout(apagaCapitulo(capitulo1), 2000);
-})
-
-// capitulo 2
-for (let i = 0; i < capitulo2.length; i++) {
-    capitulo1[3].addEventListener('animationend', () => {
-        capitulo2[0].classList.add('active');
-    })
-
-    capitulo2[i].addEventListener('animationend', () => {
-        capitulo2[i + 1].classList.add('active');
-    })
-
-    if (capitulo2[i] === linhas[6]) {
-        break
-    }
-}
-
-// temporizador para apagar o capitulo2
-
-// capitulo 3
-
-
-// troca de capitulos
-function apagaCapitulo(caiptulo) {
-    for (let item of caiptulo) {
-        item.style.display = "none";
-    }
-}
-
-
-
-
+play();
