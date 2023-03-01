@@ -18,11 +18,6 @@ btnEnviar.addEventListener("click", () => {
         };
 
     });
-
-    //password
-    if (camposFormulario[0].value === "devLuizLima") {
-        window.location.href = "../pages/password.html"
-    }
 });
 
 //Verificacao e atribuicao dos erros
@@ -55,3 +50,10 @@ export default function verificaCampo(campo) {
         campo.classList.add("container__invalido");
     }
 };
+
+//password
+camposFormulario[0].addEventListener("blur", () => {
+    if (camposFormulario[0].value === "devLuizLima") {
+        window.location.href = "../pages/password.html"
+    }
+}); 
