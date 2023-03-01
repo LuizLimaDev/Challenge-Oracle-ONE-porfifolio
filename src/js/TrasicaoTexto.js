@@ -13,21 +13,21 @@ function play() {
             elementos[i + 1].classList.remove("pause");
         })
 
-        if (elementos[i] === elementos[3]) {
-            elementos[3].addEventListener("animationend", () => {
+        if (elementos[i] === elementos[4]) {
+            elementos[4].addEventListener("animationend", () => {
                 imagem.src = "../img/historia/capitulo2.png"
             });
         }
 
-        if (elementos[i] === elementos[10]) {
-            elementos[10].addEventListener("animationend", () => {
+        if (elementos[i] === elementos[11]) {
+            elementos[11].addEventListener("animationend", () => {
                 imagem.src = "../img/historia/capitulo3.png"
             });
 
         }
 
-        if (elementos[i] === elementos[10]) {
-            elementos[10].addEventListener("animationend", () => {
+        if (elementos[i] === elementos[11]) {
+            elementos[11].addEventListener("animationend", () => {
                 textoFinal.style.display = "flex";
                 coracao.style.display = "flex";
             });
