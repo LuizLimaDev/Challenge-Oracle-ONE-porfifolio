@@ -54,7 +54,7 @@ export default function verificaCampo(campo) {
 //password
 camposFormulario[0].addEventListener("blur", () => {
     if (camposFormulario[0].value === "devLuizLima") {
-        window.location.href = "../pages/password.html"
+        window.location.href = "https://luizlimadev.github.io/Challenge-Oracle-ONE/src/pages/password.html"
         console.log("password ativado")
     }
 }); 
