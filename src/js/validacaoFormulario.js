@@ -18,6 +18,11 @@ btnEnviar.addEventListener("click", () => {
         };
 
     });
+
+    //password
+    if (camposFormulario[0].value === "devLuizLima") {
+        window.location.href = "../pages/password.html"
+    }
 });
 
 //Verificacao e atribuicao dos erros
