@@ -8,6 +8,7 @@
 @import url("componentes/projetos.css");
 @import url("componentes/contato.css");
 @import url("componentes/rodape.css");
+@import url("componentes/password.css");
 
 body {
     background-color: var(--cor-de-fundo-ligth);
