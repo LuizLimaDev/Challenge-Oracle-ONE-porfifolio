@@ -32,6 +32,9 @@ Animações CSS.
 <div>
 
 <br>
+<h2 align="center"> :key: Password </h2><br>
+<p align="center"> No final do site tem uma surpresa para todos os visitantes, relembrandos os clássicos jogos RPG de video game dos anos 90. </p>
+<br>
 
 
 <h3 align="center"> Se você curtiu o projeto, não deixe de marcar uma :star:
