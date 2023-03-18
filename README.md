@@ -23,6 +23,16 @@ Animações CSS.
 
 <br>
 
+<h2 align="center"> 🎨 Style Guide </h2>
+
+Também desenvolvi um guia de estilos para facilitar o desenvolvimento. Buscando ser um profissional em T, conhecendo um pouco das áreas relacionadas ao Front e que envolve o trabalho em equipe.
+
+<div align="center">
+<img src="https://images2.imgbox.com/ba/3c/2O4IOOAU_o.png"  width="60%" height="30%">
+</div>
+
+<br>
+
 <h2 align="center"> 💻 Tecnologias </h2>
 
 <div align="center">
