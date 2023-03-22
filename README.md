@@ -9,6 +9,11 @@
 
 ![Desktop](https://images2.imgbox.com/ef/3a/XomC043g_o.png)
 
+<h3 align="center"> Assista o vídeo </h2>
+<div align="center">
+<a href="https://9gag.com/gag/aKEAE9Q?utm" > Assistir!</a>
+</div>
+
 <br>
 
 <h2 align="center"> :warning: Requisitos </h2>
