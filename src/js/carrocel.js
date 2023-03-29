@@ -24,8 +24,8 @@ function adicionaCoracao(url) {
     container.appendChild(img);
 }
 
-const urlCoracaoPreenchido = "/Challenge-Oracle-ONE/src/img/heart-full.png";
-const urlCoracaoVazio = "/Challenge-Oracle-ONE/src/img/heart-empty.png";
+const urlCoracaoPreenchido = "../img/heart-full.png";
+const urlCoracaoVazio = "../img/heart-empty.png";
 
 btnAvancar.addEventListener('click', function () {
     const coracoes = document.querySelectorAll(".projetos__coracao");
