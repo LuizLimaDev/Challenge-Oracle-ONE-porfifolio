@@ -88,7 +88,7 @@
     font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .skills__list--box {
         width: 13rem;
         height: 7rem;
@@ -100,7 +100,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container__skills {
         padding: 3rem 12rem;
     }

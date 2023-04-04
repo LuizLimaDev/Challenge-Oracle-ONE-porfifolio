@@ -32,13 +32,13 @@ a {
     font-size: .8rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     a {
         font-size: 1rem;
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container__navbar {
         display: flex;
         justify-content: flex-end;

@@ -104,7 +104,7 @@
     width: 1rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .titulo__container {
         display: inline-flex;
         flex-direction: row;
@@ -144,7 +144,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .titulo__container {
         margin: 3rem 0 2rem;
     }

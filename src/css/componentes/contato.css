@@ -1,5 +1,9 @@
 @import url("../variaveis.css");
 
+.contato {
+    height: 115vh;
+}
+
 .contato__titulo {
     font-family: var(--fonte-secundaria);
     text-align: center;
@@ -28,7 +32,7 @@
 .contato__pergaminho {
     position: absolute;
     width: 100vw;
-    height: 88vh;
+    height: 95vh;
 
     animation: surgimentoPergaminho 1s;
 }
@@ -144,13 +148,14 @@
     background-color: var(--cor-primario-ligth);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .contato__titulo {
         padding-top: 3rem;
     }
 
     .contato__pergaminho {
         height: 68vh;
+        height: 710px;
     }
 
     @keyframes surgimentoPergaminho {
@@ -166,16 +171,24 @@
     .container__formulario {
         height: 70vh;
     }
+
+    .password {
+        margin-top: 1rem;
+    }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
+    .contato {
+        height: 105vh;
+    }
+
     .contato__titulo {
         padding-top: 4rem;
     }
 
     .contato__pergaminho {
-        height: 82vh;
-        width: 50vw;
+        max-height: 90vh;
+        max-width: 51vw;
         left: 25%;
     }
 
@@ -210,21 +223,8 @@
         position: relative;
         left: 20%;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .contato__pergaminho {
-        height: 710px;
-    }
 
     .password {
-        margin-top: 10rem;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-
-    .password {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 }

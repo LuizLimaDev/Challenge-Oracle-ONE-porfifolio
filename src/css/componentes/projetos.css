@@ -138,7 +138,7 @@
     width: 20px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .projetos__seta--esquerda {
         right: 90vw;
     }
@@ -168,7 +168,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container__projetos {
         padding: 1.5rem 12rem;
     }

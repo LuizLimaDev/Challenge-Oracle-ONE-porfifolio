@@ -62,7 +62,7 @@
     font-family: var(--fonte-primaria);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container__formacoes--boxes {
         display: flex;
         flex-wrap: wrap;
@@ -75,7 +75,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container__formacoes {
         padding: 2rem 12rem;
     }
