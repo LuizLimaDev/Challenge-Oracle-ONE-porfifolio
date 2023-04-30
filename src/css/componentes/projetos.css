@@ -53,7 +53,7 @@
 .projetos__seta--esquerda:hover,
 .projetos__seta--direita:hover {
     background-color: var(--cor-primario-ligth);
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .projetos__box {
@@ -61,14 +61,24 @@
 }
 
 .projetos__box--img {
-    width: 250px;
-    height: 144px;
-    margin: 1rem 0 1rem;
+    width: 15.625rem;
+    height: 9rem;
+    margin: 1rem 0 2rem;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-.projetos__descricao {
+.projetos__tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10rem;
+    height: 5rem;
     margin: .5rem 0 .5rem;
+}
+
+.projetos__tecnologias-icon {
+    width: 2.5rem;
 }
 
 .projetos__linksBox {
@@ -135,7 +145,7 @@
 }
 
 .projetos__coracao {
-    width: 20px;
+    width: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
