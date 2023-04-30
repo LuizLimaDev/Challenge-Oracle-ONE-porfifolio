@@ -1,7 +1,7 @@
 @import url("../variaveis.css");
 
 .contato {
-    height: 115vh;
+    height: 120vh;
 }
 
 .contato__titulo {
@@ -32,7 +32,7 @@
 .contato__pergaminho {
     position: absolute;
     width: 100vw;
-    height: 95vh;
+    height: 102vh;
 
     animation: surgimentoPergaminho 1s;
 }
@@ -179,7 +179,7 @@
 
 @media screen and (min-width: 1440px) {
     .contato {
-        height: 105vh;
+        height: 85vh;
     }
 
     .contato__titulo {
@@ -187,9 +187,9 @@
     }
 
     .contato__pergaminho {
-        max-height: 90vh;
-        max-width: 51vw;
-        left: 25%;
+        height: 70vh;
+        width: 53vw;
+        left: 23%;
     }
 
     @keyframes surgimentoPergaminho {
