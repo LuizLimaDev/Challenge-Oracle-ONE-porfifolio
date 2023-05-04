@@ -149,13 +149,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .contato {
+        height: 85vh;
+    }
+
     .contato__titulo {
         padding-top: 3rem;
     }
 
     .contato__pergaminho {
-        height: 68vh;
-        height: 710px;
+        height: 77vh;
     }
 
     @keyframes surgimentoPergaminho {
@@ -173,7 +176,7 @@
     }
 
     .password {
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
 }
 
@@ -187,7 +190,7 @@
     }
 
     .contato__pergaminho {
-        height: 70vh;
+        height: 85vh;
         width: 53vw;
         left: 23%;
     }
@@ -225,6 +228,6 @@
     }
 
     .password {
-        margin-top: 1rem;
+        margin-top: 10rem;
     }
 }
