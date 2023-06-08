@@ -14,6 +14,7 @@ body {
     background-color: var(--cor-de-fundo-ligth);
     font-family: var(--fonte-primaria);
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 .container__invalido {
