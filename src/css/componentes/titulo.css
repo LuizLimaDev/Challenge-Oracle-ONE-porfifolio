@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
 }
 
 .titulo__img {
@@ -30,7 +29,13 @@
     font-family: var(--fonte-secundaria);
     font-size: 14px;
     text-align: center;
+    margin-bottom: .5rem;
 }
+
+.titulo__titulo--2 {
+    line-height: 1.3rem;
+}
+
 
 .animacao {
     border-right: 2.5px solid black;
@@ -38,6 +43,13 @@
         escrevendo 3.5s steps(120, end);
     white-space: nowrap;
     overflow: hidden;
+}
+
+
+.titulo__network {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem
 }
 
 @keyframes cursor {
@@ -170,8 +182,14 @@
     }
 
     .titulo__descricao {
-        margin: 0 0 1rem;
+        margin: 1rem 0 0 0;
         text-align: start;
+    }
+
+    .titulo__network {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1rem
     }
 
     .titulo__network--links {
