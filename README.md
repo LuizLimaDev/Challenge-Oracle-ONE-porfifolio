@@ -16,18 +16,6 @@
 
 <br>
 
-<h2 align="center"> :warning: Requisitos </h2>
-<b>Validações do formulário:</b><br>
-- Campos vazios.<br>
-- Regex para validação do e-mail.<br>
-- Limite de 50 caracteres para os campos "Nome e Assunto".<br>
-- Limite de 300 caracteres para o campo "Menssagem".<br>
-<br><br>
-<b>Extra</b><br>
-Animações CSS.
-
-<br>
-
 <h2 align="center"> 🎨 Style Guide </h2>
 
 Também desenvolvi um guia de estilos para facilitar o desenvolvimento. Buscando ser um profissional em T, conhecendo um pouco das áreas relacionadas ao Front e que envolve o trabalho em equipe.
